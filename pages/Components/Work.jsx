@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import 'remixicon/fonts/remixicon.css'
 import { motion } from "framer-motion"
 
-export const Work = () => {
+const Work = () => {
 
     return (
         <div className='w-full relative mx-auto'>
@@ -95,3 +95,5 @@ export const Work = () => {
         </div>
     )
 }
+
+export default Work;

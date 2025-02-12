@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 
-export const Images = () => {
+const Images = () => {
     const parent = useRef(null);
     const first = useRef(null);
     const second = useRef(null);
@@ -66,3 +66,4 @@ export const Images = () => {
         </div>
     )
 }
+export default Images;

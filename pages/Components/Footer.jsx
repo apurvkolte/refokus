@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Footer = () => {
+const Footer = () => {
     return (
         <div className='flex flex-col h-auto'>
             <footer className="bg-zinc-800 text-white py-12 w-full mt-auto">
@@ -52,3 +52,5 @@ export const Footer = () => {
         </div>
     );
 };
+
+export default Footer;

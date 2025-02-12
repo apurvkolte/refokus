@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 
 
-export const PlayReal = () => {
+const PlayReal = () => {
     const parent = useRef(null);
     const videodiv = useRef(null);
     const play = useRef(null);
@@ -49,7 +49,7 @@ export const PlayReal = () => {
 
             <div className='overlay absolute  w-full h-full flex flex-col justify-between text-white py-20 sm:py-5'>
                 <div className='w-full flex gap-3 justify-center items-center'>
-                    <i class="ri-gemini-fill"></i>
+                    <i className="ri-gemini-fill"></i>
                     <h3 className='text-sm'>Work in motion</h3>
                 </div>
 
@@ -67,3 +67,5 @@ export const PlayReal = () => {
         </div>
     )
 }
+
+export default PlayReal;

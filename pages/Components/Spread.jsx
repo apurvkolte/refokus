@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from "framer-motion"
 
-export const Spread = () => {
+const Spread = () => {
     return (
         <div className='w-full h-screen'>
             <div className='max-w-screen-2xl h-60 py-10 mx-auto px-5 sm:px-10'>
@@ -36,3 +36,5 @@ export const Spread = () => {
         </div>
     );
 };
+
+export default Spread;

@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion"
 
 
-export const Landing = () => {
+const Landing = () => {
 
     return (
         <div className='relative w-full h-[150vh] sm:h-[250vh]'>
@@ -56,3 +56,4 @@ export const Landing = () => {
         </div>
     )
 }
+export default Landing;

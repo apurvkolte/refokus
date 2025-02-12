@@ -2,7 +2,7 @@ import React from 'react'
 import { IoMenu } from "react-icons/io5";
 import { motion } from "framer-motion"
 
-export const Navbar = () => {
+const Navbar = () => {
     return (
         <div className='w-full fixed z-[999] sm:px-11'>
             <div className='max-w-screen-2xl max-auto flex items-center justify-between px-5 sm:px-10 py-5 sm:py-10 text-white'>
@@ -18,3 +18,5 @@ export const Navbar = () => {
         </div >
     )
 }
+
+export default Navbar;
