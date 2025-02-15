@@ -16,8 +16,8 @@
     "next": "^13.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-icons": "^5.5.0",
-    "remixicon": "^4.7.0"
+    "react-icons": "^5.4.0",
+    "remixicon": "^4.6.0"
   },
   "devDependencies": {
     "eslint-config-next": "^13.0.0",
