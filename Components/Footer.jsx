@@ -1,56 +1,39 @@
-import React from 'react';
+import React from 'react'
 
 const Footer = () => {
     return (
-        <div className='flex flex-col h-auto'>
-            <footer className="bg-zinc-800 text-white py-12 w-full mt-auto">
-                <div className="max-w-screen-2xl mx-auto px-6">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-
-                        <div>
-                            <h3 className="text-xl font-semibold mb-4">About Us</h3>
-                            <p className="text-sm text-gray-400">
-                                We are a creative agency passionate about building digital experiences. We strive to provide high-quality services and solutions to help businesses grow.
-                            </p>
-                        </div>
-
-                        <div>
-                            <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-                            <ul>
-                                <li><a href="#" className="text-sm text-gray-400 hover:text-gray-300">Home</a></li>
-                                <li><a href="#about" className="text-sm text-gray-400 hover:text-gray-300">About</a></li>
-                                <li><a href="#services" className="text-sm text-gray-400 hover:text-gray-300">Services</a></li>
-                                <li><a href="#contact" className="text-sm text-gray-400 hover:text-gray-300">Contact</a></li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h3 className="text-xl font-semibold mb-4">Resources</h3>
-                            <ul>
-                                <li><a href="#" className="text-sm text-gray-400 hover:text-gray-300">Blog</a></li>
-                                <li><a href="#" className="text-sm text-gray-400 hover:text-gray-300">Help Center</a></li>
-                                <li><a href="#" className="text-sm text-gray-400 hover:text-gray-300">Privacy Policy</a></li>
-                                <li><a href="#" className="text-sm text-gray-400 hover:text-gray-300">Terms of Service</a></li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
-                            <ul>
-                                <li><a href="mailto:info@yourcompany.com" className="text-sm text-gray-400 hover:text-gray-300">Email Us</a></li>
-                                <li><a href="tel:+1234567890" className="text-sm text-gray-400 hover:text-gray-300">Call Us</a></li>
-                                <li><a href="#" className="text-sm text-gray-400 hover:text-gray-300">Location</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="text-center mt-12 text-sm">
-                        <p>Design and Developed by <span className="font-semibold">Apurv Kolte</span> @2025</p>
-                    </div>
+        <div className='w-full mt-10'>
+            <div className='max-w-screen-xl mx-auto py-10 flex gap-32'>
+                <div className='basis-1/2'>
+                    <h1 className='text-[11.5rem] font-semibold leading-none tracking-tight'>Weblink</h1>
                 </div>
-            </footer>
-        </div>
-    );
-};
+                <div className='basis-1/2 flex gap-4'>
+                    <div className='basis-1/3'>
+                        <h4 className='text-2xl mb-10 text-zinc-500'>Social</h4>
+                        {["instagram", "twitter (x2)", "LinkeIn"].map((item, index) => (
+                            <a className='block mt-3 capitalize text-zinc-600' href='#'>{item}</a>
+                        ))}
+                    </div>
 
-export default Footer;
+                    <div className='basis-1/3'>
+                        <h4 className='text-2xl mb-10 text-zinc-500'>Social</h4>
+                        {["instagram", "twitter (x2)", "LinkeIn"].map((item, index) => (
+                            <a key={index} className='block mt-3 capitalize text-zinc-600' href='#'>{item}</a>
+                        ))}
+                    </div>
+
+                    <div className='basis-1/2 '>
+                        <p className='text-zinc-400'>Superior website design and development are combined with innovation! Being a leading supplier of digital solutions</p>
+                        <img className='w-40 mt-10 ' src="https://www.weblinkservice.in/assets/images/wlspl_logo.png" alt="" />
+                    </div>
+
+                </div>
+            </div>
+            <div className='mt-5 py-4 text-center bg-gray-800 '>
+                <p className='text-sm font-semibold text-zinc-300'>Design & Developed by <span className='text-zinc-50'>Apurv Kolte</span> &copy; 2025</p>
+            </div>
+        </div>
+    )
+}
+
+export default Footer
