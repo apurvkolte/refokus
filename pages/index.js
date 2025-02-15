@@ -7,14 +7,14 @@ import Products from '../Components/Products'
 import Marquees from '../Components/Marquees'
 import Cards from '../Components/Cards'
 import Footer from '../Components/Footer'
-import LocomotiveScroll from 'locomotive-scroll'
+// import LocomotiveScroll from 'locomotive-scroll'
 
 
 
 const index = () => {
-    if (typeof window !== 'undefined') {
-        const locomotiveScroll = new LocomotiveScroll();
-    }
+    // if (typeof window !== 'undefined') {
+    //     const locomotiveScroll = new LocomotiveScroll();
+    // }
 
     return (
         <div className='w-full scroll-smooth select-none  bg-zinc-900 text-white'>
